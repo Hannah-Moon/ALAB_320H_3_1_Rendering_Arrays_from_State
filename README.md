@@ -1,6 +1,6 @@
 ## ALAB 320H.3.1 - Rendering Arrays in React
 
-<img alt='screen capture' src="./assets/dashboard.png"></div>
+<img width="700" alt='screen capture' src="./assets/dashboard.png"></div>
 
 ## Learning Objecttives
 
