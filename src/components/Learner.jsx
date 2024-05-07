@@ -1,12 +1,12 @@
 import React from "react";
 import Score from "./Score";
 
-const Learner = ({ data }) => {
+const Learner = ({ data, photo }) => {
   return (
     <div className="dashBaord">
       <div className="studentContainer">
         <div className="pictureCard">
-          {/* <img src={image} alt={image} className="learnerPicture" /> */}
+          <img src={photo} alt={data.name} className="learnerPicture" />
         </div>
         <div className="studentCard">
           <h2 className="nameTile">{data.name}</h2>

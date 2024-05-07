@@ -95,7 +95,7 @@ Define CSS Variables Upfront
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   /* font-size: 1.25rem; */
   background-color: var(--clr-primary-1);
-  color: #000000;
+  color: var(--clr-grey-10);
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -104,19 +104,23 @@ Define CSS Variables Upfront
 }
 
 .dashBaord {
-  width: 60rem;
+  width: 40rem;
+  height: 20rem;
 
-  background-color: #fff;
+  background-color: var(--clr-grey-10);
+  border-radius: 0.5rem;
 
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
+  padding: 0.5rem;
+  margin: 0.5rem;
 }
 
 .studentContainer {
-  width: 70%;
-  border: 2px solid #f6c0ff; /* Specify border style */
+  width: 96%;
+  border: 2px solid var(--clr-primary-2); /* Specify border style */
   border-radius: 0.5rem;
   display: flex;
   justify-content: space-between;
@@ -125,9 +129,10 @@ Define CSS Variables Upfront
 }
 
 .studentCard {
-  border: 2px solid hsl(0, 91%, 51%);
-  border-radius: 0.5rem;
+  height: 16rem;
   width: 65%;
+  border: 2px solid var(--clr-primary-3);
+  border-radius: 0.5rem;
   display: flex;
   flex-direction: column;
   padding: 0.2rem;
@@ -135,7 +140,7 @@ Define CSS Variables Upfront
 }
 
 .nameTile {
-  border: 2px solid hsl(267, 100%, 26%);
+  border: 2px solid var(--clr-primary-4);
   border-radius: 0.5rem;
   font-size: 1.55rem;
   color: #212529;
@@ -144,7 +149,7 @@ Define CSS Variables Upfront
 }
 
 .bioTile {
-  border: 2px solid hsl(149, 98%, 53%);
+  border: 2px solid var(--clr-primary-5);
   border-radius: 0.5rem;
   font-size: 0.9rem;
   color: #495057;
@@ -153,33 +158,74 @@ Define CSS Variables Upfront
 }
 
 .scoreCard {
-  border: 2px solid #97e5f3;
+  border: 2px solid var(--clr-primary-7);
   border-radius: 0.5rem;
   display: flex;
   flex-direction: column; /* Change to column layout */
   align-items: flex-end; /* Align items to the right side */
-  width: 35%;
   padding: 0.2rem;
   margin: 0.2rem;
 }
 
 .score {
-  border: 2px solid #000000;
+  border: 2px solid var(--clr-grey-2);
   border-radius: 0.5rem;
   padding: 0.2rem;
   margin: 0.2rem;
 }
 
 .gradedScore {
-  border: 2px solid #80c813;
+  border: 2px solid var(--clr-grey-2);
   border-radius: 0.5rem;
   padding: 0.2rem;
   margin: 0.2rem;
 }
 
 .gradedDate {
-  border: 2px solid #ff0000;
+  color: var(--clr-black);
+  border: 2px solid var(--clr-grey-4);
   border-radius: 0.5rem;
   padding: 0.2rem;
   margin: 0.2rem;
+}
+
+.btnContainer {
+  width: 40rem;
+  border: 2px solid #ffffff;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn1,
+.btn2,
+.btn3,
+.btn4 {
+  height: 2rem;
+  width: 7rem;
+  border: 2px solid #023e8a;
+  border-radius: 0.25rem;
+  background-color: #fff;
+  color: #023e8a;
+  padding: 0.2rem;
+  margin: 0.2rem;
+}
+
+.submitDate {
+  border: 2px solid var(--clr-grey-2);
+}
+
+.pictureCard {
+  width: 5rem;
+  height: 5rem;
+  padding: 0.2rem;
+  margin: 0.2rem;
+}
+
+.learnerPicture {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 15rem;
 }
